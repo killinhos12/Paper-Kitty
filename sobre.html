@@ -18,11 +18,30 @@
     color: purple;
     font-weight: bold;
   }
+  .logo {
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 10px; /* espaço entre logo e nome */
+}
+
 </style>
     <meta charset="UTF-8">
     <title>Sobre - Paper Kitty</title>
 </head>
 <body>
+  <header class="header">
+  <div class="logo">
+    <img src="imagens/logo.png" alt="Logo Paper Kitty" width="60">
+    <h1>Paper Kitty</h1>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
+  </nav>
+</header>
+
     <h1>Sobre a Paper Kitty</h1>
     <p>A Paper Kitty nasceu para trazer mais fofura e inspiração para o seu dia a dia. 
        Nossa missão é oferecer produtos de papelaria que misturam delicadeza, criatividade e alegria.</p>

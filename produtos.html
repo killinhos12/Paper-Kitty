@@ -16,28 +16,268 @@
             margin-top: 5px;
             font-weight: bold;
         }
-    </style>
+        nav{
+            background-color: pink;
+            padding: 15px;
+        }
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .produto {
+    border: 2px solid pink;
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .produto img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 182, 193, 0.6);
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: pink;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: hotpink;
+    color: white;
+  }
+  .logo {
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 10px; /* espaço entre logo e nome */
+}
+  nav {
+    background-color: pink;
+    padding: 15px;
+  }
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+  }
+
+  
+</style>
+
     <meta charset="UTF-8">
     <title>Produtos - Paper Kitty</title>
 </head>
 <body>
-    <h1>Produtos</h1>
-    <p>Confira nossos cadernos, planners, adesivos e acessórios fofos! 🎀</p>
-    <h2>Nossos Produtos</h2>
-    <div>
-        <img src="caderno.jpg" alt=""caderno" width="150"> 
-        <p>caderno fofom - R$25,00</p>
-    </div>
-    <div>
-        <img src="adesivo.jpg" alt="adesivo" width="150">
-        <p>adesivo criativos - r$10,00</p>
-    </div>
-    <div>
-        <img src="planner.jpg" alt="planner" width="150">
-        <p>planner semanal - R$40,00</p>
-    </div>
-    <div>
+    <header class="header">
+  <div class="logo">
+    <img src="imagens/logo.png" alt="Logo Paper Kitty" width="60">
+    <h1>Paper Kitty</data></h1>
+  </div>
+<nav style="background-color: pink; padding: 15px;">
+    <a href="index.html" style="margin-right: 15px;">Página Inicial</a>
+    <a href="sobre.html" style="margin-right: 15px;">Sobre</a>
+    <a href="produtos.html" style="margin-right: 15px;">Produtos</a>
+    <a href="carrinho.html">Carrinho</a>
+</nav>
+  </nav>
+</header>
 
-    <a href="index.html">⬅ Voltar para a Página Inicial</a>
+    <h1>Produtos</h1>
+    <section>
+       <section>
+  <h2>📒 Cadernos</h2>
+  <div class="produtos">
+    
+    <div class="produto">
+      <img src="imagens/caderno-decorado.jpg" alt="Caderno Decorado">
+      <h3>Caderno Decorado</h3>
+      <p>R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho('Caderno Decorado', 20)">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/caderno-simples.jpg" alt="Caderno Simples">
+      <h3>Caderno Simples</h3>
+      <p>R$ 15,00</p>
+      <button onclick="adicionarAoCarrinho('Caderno Simples', 15)">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+    <section>
+       <section>
+  <h2>🖊 Canetas e Marcadores</h2>
+  <div class="produtos">
+    
+    <div class="produto">
+      <img src="imagens/caneta-colorida.jpg" alt="Caneta Colorida">
+      <h3>Caneta Colorida</h3>
+      <p>R$ 4,00</p>
+      <button onclick="adicionarAoCarrinho('Caneta Colorida', 4)">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/kit-canetas.jpg" alt="Kit 5 Canetas">
+      <h3>Kit 5 Canetas</h3>
+      <p>R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho('Kit 5 Canetas', 20)">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/caneta-gel.jpg" alt="Caneta Gel Pastel">
+      <h3>Caneta Gel Pastel</h3>
+      <p>R$ 6,00</p>
+      <button onclick="adicionarAoCarrinho('Caneta Gel Pastel', 6)">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+    <section>
+  <h2>✂ Tesouras</h2>
+  <div class="produtos">
+    
+    <div class="produto">
+      <img src="imagens/tesoura-simples.jpg" alt="Tesoura Simples">
+      <h3>Tesoura Simples</h3>
+      <p>R$ 8,00</p>
+      <button onclick="adicionarAoCarrinho('Tesoura Simples', 8)">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/tesoura-decorada.jpg" alt="Tesoura Decorada">
+      <h3>Tesoura Decorada</h3>
+      <p>R$ 15,00</p>
+      <button onclick="adicionarAoCarrinho('Tesoura Decorada', 15)">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>📐 Réguas e Acessórios</h2>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/regua.jpg" alt="Régua Plástica">
+      <h3>Régua Plástica</h3>
+      <p>R$ 5,00</p>
+      <button onclick="adicionarAoCarrinho('Régua Plástica', 5)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/apontador.jpg" alt="Apontador">
+      <h3>Apontador</h3>
+      <p>R$ 3,00</p>
+      <button onclick="adicionarAoCarrinho('Apontador', 3)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/borracha.jpg" alt="Borracha Decorada">
+      <h3>Borracha Decorada</h3>
+      <p>R$ 5,00</p>
+      <button onclick="adicionarAoCarrinho('Borracha Decorada', 5)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>✨ Marca-textos</h2>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/stabilo-unitario.jpg" alt="Stabilo Unitário">
+      <h3>Stabilo Pastel</h3>
+      <p>R$ 10,00</p>
+      <button onclick="adicionarAoCarrinho('Stabilo Pastel', 10)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/stabilo-kit6.jpg" alt="Stabilo Kit 6">
+      <h3>Stabilo Kit 6</h3>
+      <p>R$ 50,00</p>
+      <button onclick="adicionarAoCarrinho('Stabilo Kit 6', 50)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/stabilo-kit10.jpg" alt="Stabilo Kit 10">
+      <h3>Stabilo Kit 10</h3>
+      <p>R$ 80,00</p>
+      <button onclick="adicionarAoCarrinho('Stabilo Kit 10', 80)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎀 Washi Tapes</h2>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/washi-unitaria.jpg" alt="Washi Tape Unitária">
+      <h3>Washi Tape Unitária</h3>
+      <p>R$ 6,00</p>
+      <button onclick="adicionarAoCarrinho('Washi Tape Unitária', 6)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/washi-kit.jpg" alt="Kit Washi Tapes">
+      <h3>Kit Washi Tapes</h3>
+      <p>R$ 75,00</p>
+      <button onclick="adicionarAoCarrinho('Kit Washi Tapes', 75)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎀 Washi Tapes</h2>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/washi-unitaria.jpg" alt="Washi Tape Unitária">
+      <h3>Washi Tape Unitária</h3>
+      <p>R$ 6,00</p>
+      <button onclick="adicionarAoCarrinho('Washi Tape Unitária', 6)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/washi-kit.jpg" alt="Kit Washi Tapes">
+      <h3>Kit Washi Tapes</h3>
+      <p>R$ 75,00</p>
+      <button onclick="adicionarAoCarrinho('Kit Washi Tapes', 75)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🖍 Outros</h2>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/post-it.jpg" alt="Post-it Colorido">
+      <h3>Post-it Colorido</h3>
+      <p>R$ 10,00</p>
+      <button onclick="adicionarAoCarrinho('Post-it Colorido', 10)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/estojo-simples.jpg" alt="Estojo Simples">
+      <h3>Estojo Simples</h3>
+      <p>R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho('Estojo Simples', 20)">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/estojo-elaborado.jpg" alt="Estojo Elaborado">
+      <h3>Estojo Elaborado</h3>
+      <p>R$ 40,00</p>
+      <button onclick="adicionarAoCarrinho('Estojo Elaborado', 40)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
