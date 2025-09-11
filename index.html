@@ -1,74 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-     <style>
-            body {
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Paper Kitty</title>
+    <style>
+        body {
             font-family: 'Patrick Hand', cursive;
-            background-color: #fff0f5; /* fundo lilás clarinho */
-           text-align: center;
+            background-color: #fff0f5;
+            text-align: center;
+            margin: 0;
         }
-        div[style*"dysplay: flex"]img {
-            border-radius: 15px;/* deixa as imagens arredondadas */
-            border: 2px solid pink;
-        }
-        div [style*"dysplay flex"] p {
-            margin-top: 5px;
-            font-weight: bold;
-        }
-        nav{
+        nav {
             background-color: pink;
             padding: 15px;
         }
-         .logo {
-        display: flex;
-        align-items: center; /* alinha verticalmente */
-          gap: 10px; /* espaço entre logo e nome */
-         }
-  nav {
-    background-color: pink;
-    padding: 15px;
-  }
-  nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: purple;
-    font-weight: bold;
-  }
-
-  
-     </style>
-    <meta charset="UTF-8">
-    <title>Paper Kitty</title>
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        /* --- NOVO ESTILO PARA OS INSTAGRAMS --- */
+        .contato {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #ffe6f2;
+            border-top: 3px solid pink;
+        }
+        .contato h2 {
+            margin-bottom: 20px;
+            color: #b30059;
+            font-size: 1.8rem;
+        }
+        .contato a {
+            display: block;
+            margin: 8px 0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #993366;
+            transition: 0.2s;
+        }
+        .contato a:hover {
+            color: #cc0066;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-   
+
 <header class="header">
-  <div class="logo">
-    <img src="imagens/logo.png" alt="Logo Paper Kitty" width="60">
-   <h1>Paper Kitty</h1>
-  </div>
-  <nav class="menu">
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
-  </nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo Paper Kitty" width="150">
+        <h1>Paper Kitty</h1>
+    </div>
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
+    </nav>
 </header>
-
-
 
 <section>
     <h2>Pagina Inicial</h2>
-    <p> ✦ Descubra cadernos, planners, adesivos e acessórios exclusivos que unem criatividade, funcionalidade e identidade. ✦ </p>
+    <p>✦ Descubra cadernos, planners, adesivos e acessórios exclusivos que unem criatividade, funcionalidade e identidade. ✦</p>
     
     <h3>destaques:</h3>
     <ul>
-        <li>Design autoral e exclusivo</li>
-        <li>🎀 Personalização que reflete o seu estilo</li>
-        <li>📦 Entrega para todo o Brasil</li> 
-    <li>Uma comunidade apaixonada por papelaria</li>
+        <p>Design autoral e exclusivo</p>
+        <p>🎀 Personalização que reflete o seu estilo</p>
+        <p>📦 Entrega para todo o Brasil</p> 
+        <p>Uma comunidade apaixonada por papelaria</p>
     </ul>
 </section>
+
+<!-- NOVA SEÇÃO DE CONTATO / EQUIPE -->
+<!-- NOVA SEÇÃO DE CONTATO / EQUIPE -->
+<section class="contato">
+    <h2>📱 Fale Conosco</h2>
+
+    <a href="https://instagram.com/pillows_bunny" target="_blank">🐰 CEO – @pillows_bunny</a>
+    <a href="https://instagram.com/Omendessuk" target="_blank">📢 Analista de Marketing – @Omendessuk</a>
+    <a href="https://instagram.com/w3b_biahx" target="_blank">⚖️ Analista Jurídico – @w3b_biahx</a>
+    <a href="https://instagram.com/_imfyn" target="_blank">🗂️ Analista Administrativo – @_imfyn</a>
+    <a href="https://instagram.com/Berry_draws_ofc" target="_blank">💼 Balconista – @Berry_draws_ofc</a>
+
+    <!-- NOVO INSTAGRAM COM IMAGEM -->
+    <a href="https://instagram.com/g.guilherme.e_" target="_blank" class="terceirizada">
+        🏗️ Empresa Terceirizada – @g.guilherme.e_
+    </a>
+</section>
+
+
 </body>
 </html>

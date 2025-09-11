@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Patrick Hand', cursive;
-    background-color: #fff0f5;
-    text-align: center;
-  }
-  nav {
-    background-color: pink;
-    padding: 15px;
-  }
-  nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: purple;
-    font-weight: bold;
-  }
-  .logo {
-  display: flex;
-  align-items: center; /* alinha verticalmente */
-  gap: 10px; /* espaço entre logo e nome */
-}
-
-</style>
     <meta charset="UTF-8">
     <title>Sobre - Paper Kitty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #fff0f5;
+            margin: 0;
+        }
+
+        nav {
+            background-color: pink;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+        }
+
+        /* --- NOVO ESTILO PARA A SEÇÃO --- */
+        .sobre-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 10%;
+        }
+
+        .sobre-section img {
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        .sobre-texto {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .sobre-texto h2 {
+            color: #b30059;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .sobre-texto p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .sobre-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sobre-texto {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="header">
-  <div class="logo">
-    <img src="imagens/logo.png" alt="Logo Paper Kitty" width="60">
-    <h1>Paper Kitty</h1>
-  </div>
-  <nav class="menu">
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
-  </nav>
-</header>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Paper Kitty" width="150">
+            <h1>Paper Kitty</h1>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
+        </nav>
+    </header>
 
-    <h1>Sobre a Paper Kitty</h1>
-    <p>A Paper Kitty nasceu para trazer mais fofura e inspiração para o seu dia a dia. 
+    <h1 style="text-align:center;">Sobre a Paper Kitty</h1>
+    <p style="text-align:center;">A Paper Kitty nasceu para trazer mais fofura e inspiração para o seu dia a dia. 
        Nossa missão é oferecer produtos de papelaria que misturam delicadeza, criatividade e alegria.</p>
 
-    <a href="index.html">⬅ Voltar para a Página Inicial</a>
+    <!-- SEÇÃO COM LAYOUT IGUAL AO BRADESCO -->
+    <section class="sobre-section">
+        <img src="papelaria.png" alt="Imagem representando papelaria">
+        <div class="sobre-texto">
+            <h2>De onde surgiu</h2>
+            <p>A Paper Kitty nasceu do sonho de transformar a papelaria em algo muito além de útil: em uma experiência que inspira, organiza e encanta.</p>
+            <p>Nós sempre fomos apaixonados por cores, cadernos, canetas e por tudo o que dá vida às ideias. O que começou como uma paixão pessoal se transformou em um projeto de vida.</p>
+            <p>Acreditamos que cada detalhe importa. Um planner pode mudar a forma como você enxerga seus dias, um caderno pode guardar memórias inesquecíveis e até um simples post-it pode arrancar um sorriso.</p>
+            <p>Criamos a Paper Kitty para compartilhar esse universo com você, que assim como nós, encontra alegria nos pequenos detalhes.</p>
+        </div>
+    </section>
+    <section class="sobre-section" style="background-color:#fff8fc;">
+    <img src="esg.png" alt="Imagem sobre ESG">
+    <div class="sobre-texto">
+        <h2 style="color:#009966;">🌱 ESG na Paper Kitty</h2>
+        <h3 style="margin-top:20px;">Ambiental</h3>
+        <p>Cuidamos do planeta com escolhas conscientes: usamos embalagens reutilizáveis ou biodegradáveis, incentivamos a reciclagem de materiais de papelaria e buscamos sempre fornecedores sustentáveis. Também reduzimos o consumo de energia e damos preferência a produtos feitos com papéis e materiais ecológicos.</p>
+
+        <h3 style="margin-top:20px;">Social</h3>
+        <p>Nosso espaço é para todos: prezamos por um ambiente de trabalho justo, inclusivo e seguro. Valorizamos a comunidade local, apoiando pequenos produtores, e mantemos uma comunicação transparente com nossos clientes. Queremos que cada pessoa se sinta acolhida na Paper Kitty.</p>
+
+        <h3 style="margin-top:20px;">Governança</h3>
+        <p>Guiamos nossa marca com ética e responsabilidade. Trabalhamos com transparência, protegendo as informações de nossos clientes e mantendo uma postura íntegra com fornecedores e parceiros. Nosso compromisso é crescer de forma honesta e sustentável.</p>
+    </div>
+</section>
+
+    <a href="index.html" style="display:block; text-align:center; margin-bottom: 20px;">⬅ Voltar para a Página Inicial</a>
 </body>
 </html>
+
